@@ -25,6 +25,10 @@ ul {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
 /* Text-decoration */
 
 .logo,
@@ -137,6 +141,8 @@ ul {
 }
 
 .header-contacts {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -170,14 +176,10 @@ ul {
 
 .button.primary {
   padding: 10px 32px;
-  margin-left: auto;
-  margin-right: auto;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  display: block;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   background-color: #2196f3;
@@ -196,6 +198,10 @@ ul {
 /* Features */
 .feature-list {
   display: flex;
+}
+
+.feature-list .item {
+  flex-basis: calc(100% / 4);
 }
 .feature-list .item + .item {
   margin-left: 30px;
@@ -264,15 +270,18 @@ ul {
   margin-left: 30px;
 }
 .teammate {
-  padding-bottom: 30px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
+.teammate-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .teammate-title {
-  margin-top: 30px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -343,10 +352,6 @@ ul {
   flex-wrap: wrap;
 }
 
-.project-img {
-  display: block;
-}
-
 .project-list > .item {
   margin-right: 30px;
   margin-bottom: 30px;
@@ -364,7 +369,6 @@ ul {
 }
 .button.secondary {
   min-width: 73px;
-  display: inline-block;
   padding: 6px 22px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
