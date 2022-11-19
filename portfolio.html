@@ -10,29 +10,37 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+  />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
+    
+    <header class="header-border">
       <!-- Шапка сайта -->
-      <nav>
+      <div class="container main-nav">
+      <nav class="nav">
         <a href="./index.html" class="logo"> <span class="web">Web</span>Studio </a>
 
         <ul class="site-nav list">
-          <li><a href="./index.html" class="link">Студія</a></li>
-          <li><a href="./portfolio.html" class="link current">Портфоліо</a></li>
-          <li><a href="" class="link">Контакти</a></li>
+          <li class="item"><a href="./index.html" class="link">Студія</a></li>
+          <li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+          <li class="item"><a href="" class="link">Контакти</a></li>
         </ul>
       </nav>
 
-      <ul class="list">
-        <li><a href="mailto:info@devstudio.com" class="header-contacts">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="header-contacts">+38 096 111 11 11</a></li>
+      <ul class="contacts list">
+        <li class="item"><a href="mailto:info@devstudio.com" class="header-contacts">info@devstudio.com</a></li>
+        <li class="item"><a href="tel:+380961111111" class="header-contacts">+38 096 111 11 11</a></li>
       </ul>
+    </div>
     </header>
     <main>
-      <section>
+      <section class="section">
+        <div class="container">
         <h1 class="visually-hidden">Portfolio</h1>
         <ul class="list">
           <li><button type="button" class="button secondary">Усі</button></li>
@@ -106,11 +114,13 @@
           </a>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer class="footer">
+      <div class="container">
       <a href="./index.html" class="logo"> <span class="web">Web</span>Studio </a>
-      <address>
+      <address class="address-margin">
         <ul class="list">
           <li>
             <a
@@ -121,12 +131,13 @@
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li>
+          <li class="contacts-margin">
             <a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a>
           </li>
-          <li><a href="tel:+380961111111" class="footer-contacts">+38 096 111 11 11</a></li>
+          <li class="contacts-margin"><a href="tel:+380961111111" class="footer-contacts">+38 096 111 11 11</a></li>
         </ul>
       </address>
+    </div>
     </footer>
   </body>
 </html>
