@@ -201,11 +201,11 @@ img {
 }
 
 .feature-list .item {
-  flex-basis: calc(100% / 4);
+  flex-basis: calc(100% - 90px / 4);
 }
-.feature-list .item + .item {
+/* .feature-list .item + .item {
   margin-left: 30px;
-}
+} */
 .section.features {
   padding-bottom: 0;
 }
