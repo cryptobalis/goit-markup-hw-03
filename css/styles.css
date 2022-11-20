@@ -141,6 +141,7 @@ img {
 }
 
 .header-contacts {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -198,10 +199,11 @@ img {
 /* Features */
 .feature-list {
   display: flex;
+  gap: 30px;
 }
 
 .feature-list .item {
-  flex-basis: calc(100% - 90px / 4);
+  flex-basis: calc((100% - 90px) / 4);
 }
 /* .feature-list .item + .item {
   margin-left: 30px;
